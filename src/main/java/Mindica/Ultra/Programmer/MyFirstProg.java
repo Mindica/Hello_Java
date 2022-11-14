@@ -1,28 +1,29 @@
 package Mindica.Ultra.Programmer;
 
 public class MyFirstProg {
+
     public static void main(String[] args) {
-        System.out.println("Hello, world!!!");
+        hello("world");
+        hello("user");
+        hello("Dana");
 
-        System.out.println(2 + 2);
-        System.out.println(2 * 2);
-        System.out.println(2 / 2);
-        System.out.println(2 - 2);
+        double len = 5;
+        System.out.println("Площадь квадрата со стороной " + len + " = " + area(len));
 
-        System.out.println(1 / 2);
-        System.out.println(1.0 / 2);
-        System.out.println(1 / 2.0);
-        System.out.println(2.0 / 2);
-
-        System.out.println("2" + "2");
-        System.out.println("2" + 2);
-        System.out.println(2 + "2");
-
-        System.out.println(2 + 2 * 2);
-        System.out.println((2 + 2) * 2);
-
-        System.out.println("2 + 2 = " + 2 + 2);
-        System.out.println("2 + 2 = " + (2 + 2));
+        double a = 4;
+        double b = 6;
+        System.out.println("Площадь прямоугольника со сторонами " + a + " и " + b + " = " + area(a, b));
+    } //Запустили функцию main, которая обратилась к функции hello
+    public static void hello(String somebody) {
+        System.out.println("Hello, " + somebody + "!");
     }
+    public static double area(double l) {
+        return l * l;
+    }
+
+    public static double area(double a, double b) {
+        return a * b;
+    }
+
 
 }
